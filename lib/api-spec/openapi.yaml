@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: marlowe-search
+    description: Catalogue and intent-based product search for Marlowe & Fern
 paths:
   /healthz:
     get:
@@ -24,6 +26,48 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /marlowe/products:
+    get:
+      operationId: listMarloweProducts
+      tags: [marlowe-search]
+      summary: List the prototype product catalogue
+      responses:
+        "200":
+          description: Fixed sample catalogue
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarloweCatalogue"
+  /marlowe/search:
+    post:
+      operationId: searchMarloweProducts
+      tags: [marlowe-search]
+      summary: Find products matching a natural-language shopping request
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MarloweSearchInput"
+      responses:
+        "200":
+          description: Ranked real catalogue products with fit explanations
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarloweSearchResponse"
+        "400":
+          description: Invalid query
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarloweError"
+        "502":
+          description: AI search is temporarily unavailable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarloweError"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +77,76 @@ components:
           type: string
       required:
         - status
+    MarloweProduct:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        category:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        colour:
+          type: string
+        occasion:
+          type: array
+          items:
+            type: string
+        details:
+          type: array
+          items:
+            type: string
+        imageUrl:
+          type: string
+      required: [id, name, category, description, price, colour, occasion, details, imageUrl]
+    MarloweCatalogue:
+      type: object
+      properties:
+        products:
+          type: array
+          items:
+            $ref: "#/components/schemas/MarloweProduct"
+      required: [products]
+    MarloweSearchInput:
+      type: object
+      properties:
+        query:
+          type: string
+          minLength: 3
+          maxLength: 400
+      required: [query]
+    MarloweProductMatch:
+      type: object
+      properties:
+        product:
+          $ref: "#/components/schemas/MarloweProduct"
+        reason:
+          type: string
+        matchType:
+          type: string
+          enum: [match, closest]
+      required: [product, reason, matchType]
+    MarloweSearchResponse:
+      type: object
+      properties:
+        intentSummary:
+          type: string
+        resultType:
+          type: string
+          enum: [matches, closest-picks]
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/MarloweProductMatch"
+      required: [intentSummary, resultType, results]
+    MarloweError:
+      type: object
+      properties:
+        error:
+          type: string
+      required: [error]
 
