@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=DM+Sans:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -78,70 +79,70 @@
   --elevate-1: rgba(0, 0, 0, 0.03);
   --elevate-2: rgba(0, 0, 0, 0.08);
 
-  --background: red; /*replace with H S L */
+  --background: 38 33% 94%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 165 30% 11%;
 
-  --border: red; /*replace with H S L */
+  --border: 36 20% 82%;
 
-  --card: red; /*replace with H S L */
+  --card: 40 38% 97%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 165 30% 11%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 36 20% 85%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 38 33% 94%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 165 30% 11%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 36 20% 82%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 160 35% 20%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 40 38% 97%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 36 25% 88%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 165 30% 11%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 14 55% 46%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 40 38% 97%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 165 30% 11%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 36 20% 85%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 160 35% 18%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 40 38% 97%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 36 25% 88%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 165 30% 11%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 36 22% 89%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 160 10% 33%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 14 50% 90%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 14 60% 30%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 4 62% 40%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 40 38% 97%;
 
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 36 18% 70%;
+  --ring: 14 55% 46%;
+  --chart-1: 160 35% 25%;
+  --chart-2: 14 55% 46%;
+  --chart-3: 36 40% 55%;
+  --chart-4: 200 20% 40%;
+  --chart-5: 340 25% 45%;
 
-  --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: Georgia, serif;
+  --app-font-sans: 'DM Sans', sans-serif;
+  --app-font-serif: 'Fraunces', Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0); /*replace with H S L */
@@ -227,68 +228,68 @@
   --elevate-1: rgba(255, 255, 255, 0.04);
   --elevate-2: rgba(255, 255, 255, 0.09);
 
-  --background: red; /*replace with H S L */
+  --background: 38 33% 94%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 165 30% 11%;
 
-  --border: red; /*replace with H S L */
+  --border: 36 20% 82%;
 
-  --card: red; /*replace with H S L */
+  --card: 40 38% 97%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 165 30% 11%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 36 20% 85%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 38 33% 94%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 165 30% 11%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 36 20% 82%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 160 35% 20%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 40 38% 97%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 36 25% 88%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 165 30% 11%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 14 55% 46%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 40 38% 97%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 165 30% 11%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 36 20% 85%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 160 35% 18%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 40 38% 97%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 36 25% 88%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 165 30% 11%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 36 22% 89%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 160 10% 33%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 14 50% 90%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 14 60% 30%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 4 62% 40%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 40 38% 97%;
 
   /* Used as the border around inputs. Dark mode: Should be a border that is light enough to have high contrast when rendered on a --card background. More contrast than standard --border */
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 36 18% 70%;
+  --ring: 14 55% 46%;
+  --chart-1: 160 35% 25%;
+  --chart-2: 14 55% 46%;
+  --chart-3: 36 40% 55%;
+  --chart-4: 200 20% 40%;
+  --chart-5: 340 25% 45%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
   --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
@@ -431,3 +432,9 @@
     inset: -1px;
   }
 }
+
+@layer base{ h1,h2,h3,.font-serif{font-family:var(--app-font-serif);font-optical-sizing:auto;font-weight:400;letter-spacing:-0.01em}
+:focus-visible{outline:2px solid hsl(var(--ring));outline-offset:3px}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rise{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}*{transition-duration:.01ms!important}}
