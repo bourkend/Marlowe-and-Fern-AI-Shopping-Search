@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Marlowe & Fern Search"
+description = "A prototype shopping search for Marlowe & Fern that turns plain-language outfit needs into ranked catalogue matches with transparent fit reasons and honest closest-pick results."
+version = "1.0.0"
+id = "artifacts/marlowe-search"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20620
+
+[services.development]
+run = "pnpm --filter @workspace/marlowe-search run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/marlowe-search", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/marlowe-search/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20620"
+BASE_PATH = "/"
