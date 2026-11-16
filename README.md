@@ -145,3 +145,15 @@ node scripts/src/check-search-scenarios.mjs
 ```
 
 This runs all test scenarios (including the challenge case three times) and saves the raw output to `test_results.md`. It makes real AI calls and uses credits.
+
+## AI Disclosure
+- **Tools used:** I used Replit and whatever model it used + Claude 
+- **Development assistance:** Replit took over all the code once I gave it the prompts I got from Claude
+- **Representative prompts:** Run the test script. With both workflows running, run node scripts/src/check-search-scenarios.mjs and open test_results.md. Check that the challenge case ran three times. This uses credits, so run it once.
+Explain
+- **Human judgment:** It wanted to do a total redesign of my website but didn't think it was relevant so discarded.
+- **Verification:** Kind of at mercy of what replits built, but it seems to be working.
+- **AI inside the product:** It takes the search and sends it to OpenAI which then takes it and understands it so it can make the right recommendations + write the why behind each.
+
+## Demo Video
+https://drive.google.com/file/d/1UMorLtl6cEcYJ-2ZLfWXhS48XC9j7WAC/view?usp=sharing
